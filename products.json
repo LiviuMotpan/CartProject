@@ -1,0 +1,65 @@
+[
+    {
+        "id" : 1,
+        "name" : "Apple 13 Pro Max",
+        "year" : 2022,
+        "price" : 1500,
+        "brand" : "Apple",
+        "image" : "https://enter.online/images/product/2023/05/enter-apple-iphone-13-pro-max-82820.webp",
+        "quantity": 1
+    },
+    {
+        "id" : 2,
+        "name" : "Samsung S23 Ultra",
+        "year" : 2023,
+        "price" : 1100,
+        "brand" : "Samsung",
+        "image" : "https://enter.online/images/product/2023/05/enter-samsung-galaxy-s23-ultra-s918-245211.webp",
+        "quantity": 1
+    },
+    {
+        "id" : 3,
+        "name" : "Apple Iphone 11",
+        "year" : 2021,
+        "price" : 600,
+        "brand" : "Apple",
+        "image" : "https://enter.online/images/product/2023/01/enter-apple-iphone-11-5289.webp",
+        "quantity": 1
+    },
+    {
+        "id" : 4,
+        "name" : "Xiaomi 11T Pro",
+        "year" : 2022,
+        "price" : 650,
+        "brand" : "Xiaomi",
+        "image" : "https://enter.online/images/product/2022/10/enter-xiaomi-11t-pro-060.webp",
+        "quantity": 1
+    },
+    {
+        "id" : 5,
+        "name" : "Samsung Galaxy A32 A325",
+        "year" : 2023,
+        "price" : 300,
+        "brand" : "Samsung",
+        "image" : "https://enter.online/images/product/2022/12/enter-samsung-galaxy-a32-a325-14676.webp",
+        "quantity": 1
+    },
+    {
+        "id" : 6,
+        "name" : "Xiaomi Redmi Note 11",
+        "year" : 2023,
+        "price" : 250,
+        "brand" : "Xiaomi",
+        "image" : "https://enter.online/images/product/2022/10/enter-xiaomi-redmi-note-11-055.webp",
+        "quantity": 1
+    },
+    {
+        "id" : 7,
+        "name" : "Apple iPhone 13",
+        "year" : 2022,
+        "price" : 850,
+        "brand" : "Apple",
+        "image" : "https://enter.online/images/product/2023/05/enter-apple-iphone-13-30873.webp",
+        "quantity": 1
+    }
+]

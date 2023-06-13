@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="icon.svg" type="image/x-icon">
+    <title>Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h2>Phone Shop</h2>
+            <i class="fa-solid fa-mobile"></i>
+        </div>
+        <div class="cart-icon" id="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+   
+    <main>
+        <section>
+            <div class="sort-container">
+                <div class="sort-alphabetical">
+                    <button>Sort Alphabetical</button>
+                </div>
+                <div class="sort-price">
+                    <button>Sort By Price</button>
+                </div>
+                <div class="sort-brand">
+                    <button>Sort By Brand</button>
+                </div>
+                <div class="sort-year">
+                    <button>Sort By Year</button>
+                </div>
+            </div>
+            <div class="weather" id="weather">
+                <h1></h1>
+            </div>
+        </section>
+         <div class="cart-container">
+            <div class="cart-header">
+                <h1>Your Cart</h1>
+                <div class="close-icon" id="close-icon">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <div class="cart-content" id="cart-container"></div>
+            <div class="card-price" id="card-price">
+                <h1>Total Price : $0</h1>
+                <button id="clear-btn">Clear</button>
+            </div>
+        </div>
+        <div class="container" id="main-container"></div>
+        <div class="add-cart-message">
+            <h1>The Product has been added to cart</h1>
+        </div>
+    </main>
+</body>
+</html>

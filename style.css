@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #36da51;
+    --secondary-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--secondary-color);
+}
+
+header {
+    position: fixed;
+    border-bottom: 2px solid var(--secondary-color);
+    width: 100vw;
+    background-color: var(--primary-color);
+    padding: 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary-color);
+}
+
+header .logo h2 {
+    font-size: 30px;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+header .logo i {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+
+header .logo {
+    display: flex;
+}
+
+header .cart-icon i {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+main {
+    background-color: var(--secondary-color);
+    min-height: calc(100vh - 150px);
+    padding-top: 200px;
+}
+
+main .container {
+    padding: 50px 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+main .container .card {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    width: 350px;
+    margin: 20px;
+}
+
+main .container .card .card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .card img {
+    margin-top: 10px;
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main .container .card .card-content {
+    padding: 25px 35px;
+    text-align-last: left;
+}
+
+main .container .card .card-content * {
+    margin-bottom: 10px;
+}
+
+main .container .card .card-content .product-name {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+main .container .card .card-content .release-year {
+    font-size: 17.5px;
+    font-weight: normal;
+}
+
+main .container .card .card-content .product-price {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+main .container .card .card-content .add-to-cart, main .remove-from-cart {
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    transition: all .3s;
+    cursor: pointer;
+    border: 2px solid var(--secondary-color);
+    font-weight: 600;
+}
+
+main .container .card .card-content .add-to-cart:hover, main .remove-from-cart:hover,main .container .card .add-to-cart.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+main .cart-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(30vw);
+    width: 30vw;
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+    z-index: 10;
+    border-left: 2px solid var(--primary-color);
+    transition: all .3s;
+}
+
+
+
+main .cart-container.show {
+    transform: translateX(0);
+}
+
+main .cart-container .cart-header {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    color: var(--primary-color);
+}
+
+main .cart-container .cart-header .close-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(255, 72, 72);
+}
+
+main .cart-container .quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .cart-container .quantity-container .quantity-btn {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+main .cart-container .cart-content {
+    display: flex;
+}
+
+main .cart-container .card-price {
+    text-align: center;
+    color: var(--primary-color);
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .cart-container .card-price h1 {
+    margin: 0 50px;
+}
+
+main .cart-container .card-price button {
+    border: 0;
+    outline: 0;
+    background: var(--primary-color);
+    font-size: 17px;
+    padding: 10px 35px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    transition: all .3s;
+    margin-right: 50px;
+}
+
+main .cart-container .card-price button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+main .cart-content {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+} 
+
+main .cart-content .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+main .cart-content .card {
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px 30px;
+    width: calc(30vw - 100px);
+}
+
+main .cart-content .card .card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+main .cart-content .card h1.product-name {
+    font-size: 25px;
+}
+
+main .cart-content .card .product-desc {
+    margin-top: 15px;
+}
+
+main .cart-content .card .quantity-container {
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+main .sort-container {
+    padding-left: 150px;
+    padding-top: 40px;
+    display: flex;
+}
+
+main .sort-container button ,main .sort-container button.active:hover{
+    border: 0;
+    outline: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-left: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;    
+    border: 2px solid var(--primary-color);
+    transition: all .3s;
+}
+
+main .sort-container button:hover ,main .sort-container button.active{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+main section {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section .weather {
+    padding-right: 180px;
+    padding-top: 40px;
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+main .add-cart-message {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%) translateY(-200px);;
+    top: 0;
+    width: 200px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 20px;
+    transition: all .3s;
+}
+
+main .add-cart-message h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+main .add-cart-message.show {
+    transform: translateX(-50%) translateY(0); 
+}
+
